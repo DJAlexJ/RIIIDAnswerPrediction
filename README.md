@@ -11,6 +11,7 @@ These features are recieved based on a common desire to get some statistics such
 ### Trueskill features
 Microsoft trueskill rating system looks something like elo rating in the sense that each student is described by a rating representing his ability to win. In short, this rating is a normal distribution with mean mu (general ability to win) and variance sigma (consistency of skills)
 
+------------------
 The description of trueskill and elo features is in `trueskill_features.py` and `elo_features.py` respectively. Since estimating these ratings requires a lot of time, scripts `trueskill_estimation.py` and `elo_estimation.py` should be run before training the final model. The results are saved in dictionaries and can be used in the future.
 
 After running `train.py`, the model is saved and can be used in inference on test data.
